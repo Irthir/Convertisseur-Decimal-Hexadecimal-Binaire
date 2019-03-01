@@ -1,0 +1,94 @@
+object Form1: TForm1
+  Left = 419
+  Height = 300
+  Top = 158
+  Width = 400
+  Caption = 'Form1'
+  ClientHeight = 300
+  ClientWidth = 400
+  DesignTimePPI = 120
+  LCLVersion = '1.8.4.0'
+  object Convertir: TButton
+    Left = 40
+    Height = 31
+    Top = 247
+    Width = 94
+    Caption = 'Convertir'
+    OnClick = ConvertirClick
+    TabOrder = 0
+  end
+  object RAZ: TButton
+    Left = 152
+    Height = 31
+    Top = 247
+    Width = 94
+    Caption = 'RAZ'
+    OnClick = RAZClick
+    TabOrder = 1
+  end
+  object Quitter: TButton
+    Left = 264
+    Height = 31
+    Top = 247
+    Width = 94
+    Caption = 'Quitter'
+    OnClick = QuitterClick
+    TabOrder = 2
+  end
+  object Decimal: TLabel
+    Left = 80
+    Height = 20
+    Top = 40
+    Width = 55
+    Caption = 'Decimal'
+    ParentColor = False
+    OnClick = DecimalClick
+  end
+  object Binaire: TLabel
+    Left = 88
+    Height = 20
+    Top = 88
+    Width = 46
+    Caption = 'Binaire'
+    ParentColor = False
+    OnClick = DecimalClick
+  end
+  object Hexadecimal: TLabel
+    Left = 64
+    Height = 20
+    Top = 136
+    Width = 87
+    Caption = 'Hexadecimal'
+    ParentColor = False
+    OnClick = DecimalClick
+  end
+  object Hexadecim: TLabel
+    Left = 280
+    Height = 20
+    Top = 136
+    Width = 16
+    Caption = '00'
+    ParentColor = False
+  end
+  object Bina: TLabel
+    Left = 245
+    Height = 20
+    Top = 88
+    Width = 64
+    Caption = '00000000'
+    ParentColor = False
+    OnClick = BinaClick
+  end
+  object Decim: TSpinEditEx
+    Left = 180
+    Height = 28
+    Top = 32
+    Width = 129
+    MaxLength = 0
+    TabOrder = 3
+    OnChange = DecimChange
+    MaxValue = 255
+    MinRepeatValue = 0
+    NullValue = 0
+  end
+end
