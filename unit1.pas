@@ -22,10 +22,7 @@ type
     RAZ: TButton;
     Quitter: TButton;
     Decim: TSpinEditEx;
-    procedure BinaClick(Sender: TObject);
     procedure ConvertirClick(Sender: TObject);
-    procedure DecimalClick(Sender: TObject);
-    procedure DecimChange(Sender: TObject);
     procedure QuitterClick(Sender: TObject);
     procedure RAZClick(Sender: TObject);
   private
@@ -95,24 +92,11 @@ begin
   end;
 end;
 
-procedure TForm1.BinaClick(Sender: TObject);
-begin
 
-end;
-
-procedure TForm1.DecimalClick(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.DecimChange(Sender: TObject);
-begin
-
-end;
 
 procedure TForm1.QuitterClick(Sender: TObject);
 begin
-   case QuestionDlg ('Caption','Voulez-vous vraiment quitter ?',mtCustom,[mrYes,'Oui', mrNo, 'Non'],'') of
+   case QuestionDlg ('Confirmation','Voulez-vous vraiment quitter ?',mtCustom,[mrYes,'Oui', mrNo, 'Non'],'') of
         mrYes: close;
     end;
 end;
@@ -122,6 +106,7 @@ begin
   Decim.Value:=0;
   Bina.Caption:='00000000';
   Hexadecim.Caption:='00';
+  Decim.Setfocus;
 end;
 
 end.

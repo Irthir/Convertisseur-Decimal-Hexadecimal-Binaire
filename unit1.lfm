@@ -3,11 +3,11 @@ object Form1: TForm1
   Height = 300
   Top = 158
   Width = 400
-  Caption = 'Form1'
+  Caption = 'Convertisseur Decimal Binaire Hexadecimal'
   ClientHeight = 300
   ClientWidth = 400
   DesignTimePPI = 120
-  LCLVersion = '1.8.4.0'
+  LCLVersion = '2.0.0.4'
   object Convertir: TButton
     Left = 40
     Height = 31
@@ -42,7 +42,6 @@ object Form1: TForm1
     Width = 55
     Caption = 'Decimal'
     ParentColor = False
-    OnClick = DecimalClick
   end
   object Binaire: TLabel
     Left = 88
@@ -51,7 +50,6 @@ object Form1: TForm1
     Width = 46
     Caption = 'Binaire'
     ParentColor = False
-    OnClick = DecimalClick
   end
   object Hexadecimal: TLabel
     Left = 64
@@ -60,7 +58,6 @@ object Form1: TForm1
     Width = 87
     Caption = 'Hexadecimal'
     ParentColor = False
-    OnClick = DecimalClick
   end
   object Hexadecim: TLabel
     Left = 280
@@ -77,7 +74,6 @@ object Form1: TForm1
     Width = 64
     Caption = '00000000'
     ParentColor = False
-    OnClick = BinaClick
   end
   object Decim: TSpinEditEx
     Left = 180
@@ -86,9 +82,7 @@ object Form1: TForm1
     Width = 129
     MaxLength = 0
     TabOrder = 3
-    OnChange = DecimChange
     MaxValue = 255
     MinRepeatValue = 0
-    NullValue = 0
   end
 end
